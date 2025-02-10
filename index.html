@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveNPlay - Online Video Downloader</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        input, button { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to SaveNPlay</h1>
+    <p>Paste your video link below to download.</p>
+    <input type="text" id="videoUrl" placeholder="Enter video URL">
+    <button onclick="downloadVideo()">Download</button>
+
+    <script>
+        function downloadVideo() {
+            let url = document.getElementById("videoUrl").value;
+            if (url) {
+                alert("Downloading: " + url);
+            } else {
+                alert("Please enter a valid URL.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-fastapi
-uvicorn
+Flask
 yt-dlp
 gunicorn
